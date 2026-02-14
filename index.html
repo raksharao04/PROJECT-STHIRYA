@@ -16,6 +16,20 @@
 body {
   line-height: 1.6;
   color: #333;
+  margin-top: 70px;
+}
+
+nav {
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 header {
@@ -40,10 +54,11 @@ header p {
 }
 
 .logo {
-  width: 120px;
+  width: 180px;
   height: auto;
-  margin-bottom: 20px;
   object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: brightness(1.1) contrast(1.2);
 }
 
 .btn {
@@ -96,8 +111,11 @@ footer {
 
 <body>
 
-<header>
+<nav>
   <img src="./images/Sthirya logo.jpg" alt="Sthirya Logo" class="logo">
+</nav>
+
+<header>
   <h1>Elegant Spaces</h1>
   <p>Transforming houses into dream homes</p>
   <a href="#contact" class="btn">Book Consultation</a>
