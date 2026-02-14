@@ -36,8 +36,11 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 0;
   margin: 0;
+  flex: 1;
+  justify-content: space-around;
+  margin-left: 40px;
 }
 
 nav a {
@@ -73,11 +76,13 @@ header p {
 }
 
 .logo {
-  width: 180px;
+  width: 250px;
   height: auto;
   object-fit: contain;
   mix-blend-mode: multiply;
   filter: brightness(1.1) contrast(1.2);
+  flex-shrink: 0;
+}
 }
 
 .btn {
